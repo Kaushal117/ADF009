@@ -1,0 +1,15 @@
+{
+	"name": "adfdevfinanceus9001",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Enabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "703e15bb-f42c-4a0e-a697-c4047edc9e4a",
+		"tenantId": "76a2ae5a-9f00-4f6b-95ed-5d33d77c4d61"
+	}
+}

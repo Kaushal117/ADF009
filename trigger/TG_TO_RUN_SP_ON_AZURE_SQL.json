@@ -1,0 +1,24 @@
+{
+	"name": "TG_TO_RUN_SP_ON_AZURE_SQL",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_AZURE_SQL",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Day",
+				"interval": 1,
+				"startTime": "2026-05-29T13:59:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}

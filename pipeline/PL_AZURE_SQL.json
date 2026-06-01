@@ -1,0 +1,48 @@
+{
+	"name": "PL_AZURE_SQL",
+	"properties": {
+		"activities": [
+			{
+				"name": "SP_AZURE_SQL_INSERT",
+				"type": "SqlServerStoredProcedure",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"storedProcedureName": "[dbo].[insertEmployee]",
+					"storedProcedureParameters": {
+						"Email": {
+							"value": "xyzu@gmail.com",
+							"type": "String"
+						},
+						"EmployeeID": {
+							"value": "2",
+							"type": "Int32"
+						},
+						"FirstName": {
+							"value": "xyzu",
+							"type": "String"
+						},
+						"LastName": {
+							"value": "zani",
+							"type": "String"
+						}
+					}
+				},
+				"linkedServiceName": {
+					"referenceName": "LS_AZURE_SQL",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2026-05-29T08:28:13Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
